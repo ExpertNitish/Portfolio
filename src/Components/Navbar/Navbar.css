@@ -1,0 +1,101 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 10.625rem; /* 0px 170px */
+
+  .nav-mob-open {
+    display: none;
+  }
+
+  .logo {
+    width: 8.125rem; /* 130px */
+  }
+  .nav-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 4.375rem; /* 70px */
+    font-size: 1.25rem; /* 20px */
+
+    .nav-mob-close {
+      display: none;
+    }
+
+    li {
+      display: flex;
+      flex-direction: column;
+      gap: 0.3125rem; /* 5px */
+      cursor: pointer;
+
+      img {
+        display: flex;
+        margin: auto;
+      }
+    }
+  }
+  .nav-connect {
+    padding: 1.25rem 2.5rem; /* 20px 40px */
+    border-radius: 3.125rem; /* 50px */
+    background: linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102.36%);
+    font-size: 1.375rem; /* 22px */
+    cursor: pointer;
+    transition: 0.5s;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+}
+.anchor-link {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+@media(max-width: 48rem) { /* 768px */
+  .navbar {
+    /* background-color: red; */
+    margin: 1.25rem 3.125rem; /* 20px 50px */
+
+    .nav-mob-open {
+      display: block;
+      position: fixed;
+      right: 1.875rem; /* 30px */
+    }
+    .nav-menu {
+      position: fixed;
+      flex-direction: column;
+      align-items: start;
+      top: 0;
+      gap: 1.875rem; /* 30px */
+      background-color: #1f0016;
+      width: 21.875rem; /* 350px */
+      height: 100%;
+      z-index: 2;
+      transition: right 0.5s;
+      right: -21.875rem; /* -350px */
+
+      .nav-home {
+        margin-top: 6.25rem; /* 100px */
+      }
+
+      li {
+        display: flex; 
+        font-size: 1.875rem; /* 30px */
+        padding-left: 6.25rem; /* 100px */
+        flex-direction: row;
+        gap: 1.25rem; /* 20px */
+      }
+      .nav-mob-close {
+        display: block;
+        position: absolute;
+        top: 1.875rem; /* 30px */
+        left: 18.125rem; /* 290px */
+        width: 1.875rem; /* 30px */
+      }
+    }
+    .nav-connect {
+      display: none;
+    }
+  }
+}

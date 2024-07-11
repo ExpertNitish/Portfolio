@@ -1,0 +1,202 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem; /* 40px */
+  margin: 0 10.625rem; /* 0px 170px */
+
+  .contact-title {
+    position: relative;
+
+    h1 {
+      font-size: 5.625rem; /* 90px */
+      padding: 0 1.875rem; /* 0 30px */
+      font-weight: 600;
+    }
+    img {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      z-index: -1;
+    }
+  }
+  .contact-section {
+    display: flex;
+    gap: 9.375rem; /* 150px */
+
+    .contact-left {
+      display: flex;
+      flex-direction: column;
+      gap: 1.875rem; /* 30px */
+
+      h1 {
+        font-size: 5rem; /* 80px */
+        font-weight: 700;
+        background: linear-gradient(270deg, #df8908 10%, #b415ff 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      p {
+        max-width: 34.375rem; /* 550px */
+        color: #d8d8d8;
+        font-size: 1.125rem; /* 18px */
+        line-height: 2.1875rem; /* 35px */
+      }
+      .contact-details {
+        display: flex;
+        flex-direction: column;
+        gap: 1.875rem; /* 30px */
+        color: #d8d8d8;
+        font-size: 1.375rem; /* 22px */
+
+        .contact-detail {
+          display: flex;
+          gap: 1.25rem; /* 20px */
+          align-items: center;
+        }
+      }
+    }
+    .contact-right {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      gap: 1.875rem; /* 30px */
+
+      label {
+        color: #d8d8d8;
+        font-size: 1.375rem; /* 22px */
+        font-weight: 500;
+      }
+
+      input {
+        border: none;
+        width: 43.75rem; /* 700px */
+        height: 4.875rem; /* 78px */
+        padding-left: 1.25rem; /* 20px */
+        border-radius: 0.25rem; /* 4px */
+        background: #32323c;
+        color: #a0a0a0;
+        font-family: Outfit, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 1.25rem; /* 20px */
+      }
+
+      textarea {
+        width: 40.625rem; /* 650px */
+        border: none;
+        padding: 1.5625rem; /* 25px */
+        border-radius: 0.25rem; /* 4px */
+        background: #32323c;
+        color: #a0a0a0;
+        font-family: Outfit, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 1.25rem; /* 20px */
+      }
+      button {
+        border: none;
+        color: white;
+        border-radius: 3.125rem; /* 50px */
+        /* margin-bottom: 50px; */
+        background: linear-gradient(264deg, #DF8908 -5.09%, #B415FF 106.28%);
+        font-size: 1.5625rem; /* 25px */
+        padding: 1.25rem 3.75rem; /* 20px 60px */
+        cursor: pointer;
+        transition: 0.5s;
+
+        &:hover {
+          transform: scale(1.05);
+          transition: 0.3s;
+        }
+      }
+    }
+  }
+  hr {
+    width: 100%;
+    height: 0.0625rem; /* 1px */
+    background: #d8d8d8;
+  }
+  .footer {
+    width: 90vw;
+    display: flex;
+    justify-content: space-between;
+
+    .footer-right {
+      display: flex;
+      gap: 1.25rem; /* 20px */
+      margin-bottom: 0.625rem; /* 10px */
+    }
+
+  }
+}
+
+@media (max-width: 768px) {
+  .contact {
+    margin: 1.25rem; /* 20px */
+    gap: 2rem; /* 32px */
+
+    .contact-title {
+      h1 {
+        font-size: 3rem; /* 48px */
+        padding: 0 1.25rem; /* 0 20px */
+      }
+    }
+
+    .contact-section {
+      flex-direction: column;
+      gap: 2.5rem; /* 40px */
+
+      .contact-left {
+        h1 {
+          font-size: 3.75rem; /* 60px */
+        }
+        p {
+          max-width: 100%;
+          font-size: 1rem; /* 16px */
+          line-height: 1.5rem; /* 24px */
+        }
+        .contact-details {
+          gap: 1.25rem; /* 20px */
+          font-size: 1rem; /* 16px */
+
+          .contact-detail {
+            gap: 1rem; /* 16px */
+          }
+        }
+      }
+
+      .contact-right {
+        gap: 1.25rem; /* 20px */
+
+        label {
+          font-size: 1.125rem; /* 18px */
+        }
+
+        input {
+          width: 100%;
+          height: 3.75rem; /* 60px */
+        }
+
+        textarea {
+          width: 100%;
+          height: 10rem; /* 160px */
+        }
+
+        button {
+          font-size: 1.25rem; /* 20px */
+          padding: 1rem 2rem; /* 16px 32px */
+        }
+      }
+    }
+
+    .footer {
+      flex-direction: column;
+      align-items: center;
+      gap: 1.25rem; /* 20px */
+
+      .footer-right {
+        gap: 0.625rem; /* 10px */
+        margin-bottom: 0;
+      }
+    }
+  }
+}
