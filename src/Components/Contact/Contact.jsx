@@ -4,7 +4,6 @@ import theme_pattern from "../../assets/theme_pattern.svg";
 import mail_icon from "../../assets/mail_icon.svg";
 import location_icon from "../..//assets/location_icon.svg";
 import call_icon from "../../assets/call_icon.svg";
-import linkedin from '../../assets/linkedin.png'
 
 const Contact = () => {
   const [result, setResult] = React.useState("");
@@ -18,7 +17,7 @@ const Contact = () => {
 
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
-      body: formData
+      body: formData,
     });
 
     const data = await response.json();
@@ -59,7 +58,7 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        <form  onSubmit={onSubmit} className="contact-right">
+        <form onSubmit={onSubmit} className="contact-right">
           <label htmlFor="name">Your Name</label>
           <input type="text" placeholder="Enter your Name" name="name" />
           <label htmlFor="email">Email Id</label>
@@ -70,9 +69,7 @@ const Contact = () => {
             name="message"
             rows="8"
           />
-          <button type="submit">
-            Submit Now
-          </button>
+          <button type="submit">Submit Now</button>
         </form>
       </div>
       <hr />

@@ -104,3 +104,16 @@
     }
   }
 }
+
+
+@media (max-width: 635px) and (min-width: 300px){
+  .hero {
+    h1 {
+      font-size: 2rem;
+    }
+    .hero-action {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}

@@ -94,8 +94,7 @@
 
       .about-left {
         img {
-          width: 100%;
-          height: auto;
+          display: none;
         }
       }
 
@@ -104,7 +103,7 @@
 
         .about-para {
           gap: 1rem; /* 16px */
-          font-size: 1rem; /* 16px */
+          font-size: 3vw; /* 16px */
         }
 
         .about-skills {
@@ -126,6 +125,36 @@
           }
         }
       }
+    }
+  }
+}
+
+
+@media (max-width: 1300px) and (min-width: 862px) {
+  .about  {
+    margin: 0 20px;
+  }
+  .about-section img {
+    /* background-color: red; */
+    width: 20vw;
+    height: 20vw;
+  }
+}
+
+@media (max-width: 861px) and (min-width: 768px){
+  .about {
+  /* background-color: red; */
+  margin: 0px 20px;
+    .about-section img {
+      display: none;
+    }
+}
+}
+
+@media (max-width:560px) and (min-width: 300px){
+  .about {
+    p {
+      font-size: 18px;
     }
   }
 }
