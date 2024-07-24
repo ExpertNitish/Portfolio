@@ -54,7 +54,7 @@ const Contact = () => {
               <img src={call_icon} alt="" /> <p> +91 7065294211</p>
             </div>
             <div className="contact-detail">
-              <img src={location_icon} alt="" /> <p>New Delhi, India</p>
+              <img src={location_icon} alt="" /> <p>Delhi, India</p>
             </div>
           </div>
         </div>
