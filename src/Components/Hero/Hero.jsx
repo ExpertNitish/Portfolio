@@ -9,7 +9,7 @@ const Hero = () => {
       <img src={profile_picture} alt="" />
       </div>
       <h1>
-       <span> I'm Nitish,</span> Front End Developer <br />based in New Delhi, India
+       <span> I'm Nitish,</span> Front End Developer <br />based in Delhi, India
       </h1>
       <p>
       I love creating websites that are easy to use and look great. Let's make your ideas come to life online.
